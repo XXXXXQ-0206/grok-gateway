@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "public_token": "",
+  "admin_token": "",
+  "upstreams": [
+    {
+      "name": "primary",
+      "base_url": "https://api.x.ai",
+      "bearer_token": "xai-your-api-key-here",
+      "sso_token": "",
+      "enabled": true,
+      "models": ["grok-4", "grok-4-reasoning"],
+      "weight": 1,
+      "cooldown_seconds": 30,
+      "timeout_seconds": 120,
+      "max_retries": 1,
+      "extra_headers": {}
+    }
+  ]
+}

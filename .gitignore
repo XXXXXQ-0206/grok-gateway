@@ -1,0 +1,63 @@
+# Secrets and local runtime configuration
+accounts.json
+gateway.json
+emails.json
+*.env
+.env*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.token
+*.secret
+
+# Runtime output
+*.log
+*.pid
+*.sqlite
+*.sqlite3
+debug_*.png
+x_debug.png
+gateway.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Local-only historical or experimental automation work
+any-auto-register/
+grok-register/
+auto_register.py
+blast.py
+CODEX_HANDOFF.md
+doit.py
+email_farm.py
+full_auto.py
+go.py
+go2.py
+human.py
+run.py
+signup.py
+xai_signup.py
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

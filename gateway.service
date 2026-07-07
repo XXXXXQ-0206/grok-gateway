@@ -1,0 +1,21 @@
+[Unit]
+Description=Grok Gateway — OpenAI Compatible API Proxy
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/grok-gateway
+ExecStart=/opt/grok-gateway/.venv/bin/python /opt/grok-gateway/gateway.py --config /opt/grok-gateway/accounts.json --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=3
+Environment=GATEWAY_LOG_LEVEL=info
+
+# 安全加固 (可选)
+# User=grok
+# Group=grok
+# ProtectSystem=strict
+# ProtectHome=true
+# NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
