@@ -1,7 +1,7 @@
 # Runtime
-fastapi>=0.115.0
-uvicorn[standard]>=0.30.0
-httpx>=0.27.0
+fastapi>=0.139.0
+uvicorn[standard]>=0.50.2
+httpx>=0.28.1
 
 # Development and tests
-pytest>=8.0.0
+pytest>=9.1.1
