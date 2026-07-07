@@ -4,8 +4,6 @@
 
 Grok Gateway is a small OpenAI-compatible API gateway for routing requests to one or more authorized xAI/Grok API keys. It also includes a helper for creating API keys through the official xAI Management API or importing credentials that you already own and are authorized to use.
 
-This public release is intentionally scoped to legitimate API-key based usage. It does not include browser automation, CAPTCHA handling, third-party account registration, account farming, or web-login SSO token extraction.
-
 ## Features
 
 - OpenAI-compatible `/v1/chat/completions` proxy with streaming support.

@@ -2,9 +2,7 @@
 
 ## Supported Scope
 
-This repository supports only the public Grok/xAI API gateway and authorized API key import/provisioning flows.
-
-The public release does not include browser automation, CAPTCHA bypass, third-party account registration, or web-login SSO token extraction.
+This repository supports the Grok/xAI API gateway and authorized API key import/provisioning flows.
 
 ## Reporting a Vulnerability
 
