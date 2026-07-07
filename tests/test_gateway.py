@@ -72,7 +72,7 @@ class GatewayTests(unittest.TestCase):
         """自动检测 grok:// URL (不指定 format)。"""
         text = "grok://token123@api.x.ai?name=test"
         parsed = gateway.parse_import_payload(text, "auto")
-        self.assertTrue(len(parsed) >= 1)
+        self.assertGreaterEqual(len(parsed), 1)
         self.assertEqual(parsed[0].bearer_token, "token123")
 
     # ---- API 端点测试 ----

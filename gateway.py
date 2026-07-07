@@ -265,10 +265,9 @@ class GatewayState:
                 os.fsync(tmp.fileno())
             Path(tmp_name).replace(path)
         finally:
-            try:
-                Path(tmp_name).unlink(missing_ok=True)
-            except Exception:
-                pass
+            tmp_path = Path(tmp_name)
+            if tmp_path.exists():
+                tmp_path.unlink()
 
     async def load(self) -> None:
         async with self._file_lock:

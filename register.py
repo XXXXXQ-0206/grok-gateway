@@ -378,8 +378,8 @@ async def wait_api_key_propagation(
                     data = response.json()
                     if bool(data.get("propagated", data.get("ready", False))):
                         return True
-            except Exception:
-                pass
+            except (httpx.HTTPError, json.JSONDecodeError):
+                continue
             await asyncio.sleep(delay_seconds)
     return False
 
@@ -514,8 +514,8 @@ async def main() -> None:
         account = manual_import(name=key_name, token=api_key, base_url=GROK_API_BASE)
         accounts.append(account)
         save_accounts(accounts, output_path)
-        print(f"[OK] Created API key {api_key_id or '(no id)'}")
-        print(f"[OK] Saved {account.name} with token {redact_secret(api_key)} to {output_path}")
+        print("[OK] Created API key")
+        print(f"[OK] Saved {account.name} to {output_path}; secret value was not printed")
         return
 
     if args.mode == "import":
