@@ -2,6 +2,8 @@
 
 [English README](README.md)
 
+**维护声明：** 本项目已停止维护，不再计划新增功能、修复问题、更新依赖或提供支持。
+
 Grok Gateway 是一个轻量的 OpenAI 兼容 API 网关，用于将请求路由到一个或多个你已授权使用的 xAI/Grok API key。项目还包含一个辅助工具，可通过官方 xAI Management API 创建 API key，或导入你已经拥有并被授权使用的凭据。
 
 ## 功能

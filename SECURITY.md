@@ -1,5 +1,7 @@
 # Security Policy
 
+This project is no longer maintained. Security reports may not receive a response or a fix.
+
 ## Supported Scope
 
 This repository supports the Grok/xAI API gateway and authorized API key import/provisioning flows.
